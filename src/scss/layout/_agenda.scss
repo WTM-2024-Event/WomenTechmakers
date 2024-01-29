@@ -177,9 +177,9 @@
     }
   
     &__text {
-      @include textStyle($black, $montserrat, 1.2rem, regular, 1.4);
+      @include textStyle($black, $montserrat, 1.2rem, regular, 1.5);
       margin-bottom: 2.5rem;
-      text-align: justify;
+      text-align:left;
       @media (min-width: 768px) {
         margin-inline: 3rem;
         font-size: 1.4rem;
@@ -205,3 +205,8 @@
   .hidden {
     display: none;
   }
+
+  .br {
+    margin-top: 5rem;
+ }
+ 
