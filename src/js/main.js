@@ -86,7 +86,6 @@ function openModal(ponente) {
       </div>
       <div class="modal__column text-column">
         <h3 class="modal__titleP">${info.title}</h3>
-        <p class="modal__text"><b>${info.place}</b> ${info.bio}</p>
         <p class="modal__text">${info.info}</p>
         <button class="modal__close" onclick="closeModal()">Volver</button>
       </div>`;

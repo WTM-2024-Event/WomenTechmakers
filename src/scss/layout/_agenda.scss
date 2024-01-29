@@ -38,7 +38,7 @@
       width: 80rem;
     }
     @media (min-width: 1440px) {
-      width: 105rem;
+      width: 100rem;
     }
   
     &__cel {
@@ -85,11 +85,11 @@
     }
   
     &__presentations {
-      @include dFlex(0, center, center);
+      @include dFlex(0, center, 0);
       flex-direction: column;
       background-color:$white;
       @include padding(1.5rem, 1.5rem);
-      @include textStyle($black, $montserrat, 1.2rem, 500, 1);
+      @include textStyle($black, $montserrat, 1.2rem, 500, 1.2);
       cursor: pointer;
       border-radius: 1rem;
       text-align: center;
@@ -97,6 +97,18 @@
       :last-child{
         @include textStyle($black, $montserrat, 1.2rem, 300, 1);
         margin-top: 0.8rem;
+        // text-align: end;
+        // margin-right: 1.5rem;
+        @media (min-width: 768px) {
+           //margin-right: 2rem;
+           font-size: 1.3rem;
+         }
+        // @media (min-width: 1024px) {
+        //   margin-right: 10rem;
+        // }
+        // @media (min-width: 1440px) {
+        //   margin-right: 20rem;
+        // }
       }
   
       &:hover {
@@ -118,7 +130,7 @@
     @include dFlex(column, center, center);
   
     &__container {
-      filter: drop-shadow(0 0 7rem #4fd5b0);
+      filter: drop-shadow(0 0 7rem $blue400);
       text-align: center;
       background-color: $white;
       border-radius: 2.5rem;
@@ -142,13 +154,13 @@
   
     &__name {
       margin-bottom: 1.5rem;
-      @include textStyle($blue, $montserrat, 1.5rem, $bold, 1.5);
+      @include textStyle($blue, $montserrat, 1.3rem, $bold, 1.5);
       text-transform: uppercase;
-      filter: drop-shadow(0 0 2px #4fd5b0);
+      //filter: drop-shadow(0 0 2px #4fd5b0);
     }
   
     &__titleP {
-      @include textStyle($blue500, $montserrat, 1.5rem, bold, 1.2);
+      @include textStyle($black, $montserrat, 1.5rem, bold, 1.2);
       margin-bottom: 2.5rem;
       @media (min-width: 768px) {
         font-size: 1.8rem;
@@ -165,7 +177,7 @@
     }
   
     &__text {
-      @include textStyle($black, $montserrat, 1.2rem, regular, 1.5);
+      @include textStyle($black, $montserrat, 1.2rem, regular, 1.4);
       margin-bottom: 2.5rem;
       text-align: justify;
       @media (min-width: 768px) {
@@ -187,67 +199,9 @@
     }
   }
   .shadow {
-    filter: drop-shadow(0 0 10px $turquoiseDark);
+    filter: drop-shadow(0 0 10px $blue300);
   }
   
   .hidden {
     display: none;
   }
-  
-  // .container {
-  //   display: flex;
-  //   justify-content: center;
-  //   position: relative;
-  //   &__asterisk {
-  //     width: 15rem;
-  //     position: absolute;
-  //     top: 10rem;
-  //     left: -2rem;
-  //     position:-webkit-sticky;
-  //     @media (min-width: 375px) {
-  //       top: 60rem;
-  //       bottom: 20rem;
-  //       left: -2rem;
-  //     }
-  //     @media (min-width: 768px) {
-  //       width: 25rem;
-  //       top: 55rem;
-  //     }
-  //   }
-  // }
-  
-  // // .asterisk {
-  // //   width: 15rem;
-  // //   height: 15rem;
-  // //   position: absolute;
-  // //   top: 130rem;
-  // //   left: -5rem;
-  
-  // //   @media (min-width: 375px) {
-  // //     width: 15rem;
-  // //     height: 15rem;
-  // //     top: 120rem;
-  // //     left: -5rem;
-  // //   }
-  
-  // //   @media (min-width: 425px) {
-  // //     width: 18rem;
-  // //     height: 18rem;
-  // //     top: 115rem;
-  // //     left: -5rem;
-  // //   }
-  
-  // //   @media (min-width: 768px) {
-  // //     width: 20rem;
-  // //     height: 20rem;
-  // //     top: 105rem;
-  // //     left: -5rem;
-  // //   }
-  // //   @media (min-width: 1024px) {
-  // //     width: 30rem;
-  // //     height: 30rem;
-  // //     top: 105rem;
-  // //     left: -5rem;
-  // //   }
-  // // }
-  
