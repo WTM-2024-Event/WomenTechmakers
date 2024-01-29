@@ -1,172 +1,121 @@
 
 .speakers {
-    padding-block: 8rem 5rem;
-    background-color: $turquoiseLight;
-  
-    &_title {
-      text-align: center;
-      text-transform: uppercase;
-      @include textStyle($blue, $montserrat, 2rem, bold, 1.5rem);
-      margin-bottom: 5rem;
-      @media (min-width: 768px) {
-        font-size: 3.5rem;
-      }
-    }
-  
-    &_img {
-      width: 85%;
-      max-width: 1200px;
-      margin-inline: auto;
-      display: grid;
-      grid-template-columns: repeat(auto-fit, 133px);
-      grid-auto-rows: 200px;
-      justify-content: center;
-      gap: 2rem;
-      
-  
-      @media (min-width: 270px) and (max-width: 500px) {
-        grid-auto-rows: 283px;
-      }
-  
-      &_container {
-        clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
-        grid-column: span 2;
-        height: 283px;
-        position: relative;
-  
-        &_unique {
-          width: 100%;
-          height: 100%;
-          object-fit: cover;
-          }
-  
-        :first-of-type {
-          grid-column: 2 / span 2;
-        }
-  
-        @media (min-width: 270px) and (max-width: 500px) {
-          grid-column: 1 / span 2;
-        }
-      }
-  
-      @media (min-width: 501px) and (max-width: 700px) {
-        :nth-of-type(odd) {
-          grid-column: 2 / span 2;
-        }
-      }
-  
-      @media (min-width: 701px) and (max-width: 876px) {
-        :nth-of-type(3n + 1) {
-          grid-column: 2 / span 2;
-        }
-      }
-  
-      @media (min-width: 877px) and (max-width: 1056px) {
-        :nth-of-type(4n + 1) {
-          grid-column: 2 / span 2;
-        }
-      }
-      @media (min-width: 1057px) and (max-width: 1237px) {
-        :nth-of-type(5n + 1) {
-          grid-column: 2 / span 2;
-        }
-      }
-  
-      @media (min-width: 1238px) and (max-width: 1383px) {
-        :nth-of-type(6n + 1) {
-          grid-column: 2 / span 2;
-        }
-      }
-  
-      @media (min-width: 1384px) {
-        :nth-of-type(7n + 1) {
-          grid-column: 2 / span 2;
-        }
-      }
-      
-      &-name {
-        text-align: center;
-        margin-top: 2rem;
-      }
-    }
-  
-    &_button {
-      @include dFlex(0, center, center);
-      @include btn(none, 3rem, $blue);
-      padding: 10px 15px;
-      margin-inline: auto;
-      margin-top: 15rem;
-      margin-bottom: 5rem;
-      @include textStyle($white, $montserrat, 1.5rem, $regular, 1.5);
-      @media (min-width: 768px) {
-        font-size: 2rem;
-        padding: 15px 20px;
-      }
-    }
-  
-    &_a {
-      text-decoration: none;
-      :hover {
-        background-color: $turquoise;
-        cursor: pointer;
-      }
-    }
-  }
-  
-  .container{
+  padding-block: 8rem 5rem;
+  background-color: $turquoiseLight;
+
+  &__title {
     text-align: center;
-    margin-bottom: 16px;
-    float: left;
-    position: relative;
+    text-transform: uppercase;
+    @include textStyle($blue, $montserrat, 2rem, bold, 1.5rem);
+    margin-bottom: 5rem;
+    @media (min-width: 768px) {
+      font-size: 3.5rem;
+    }
   }
-  .img{
-    transition: opacity .2s, visibility .2s;
+
+  &__img {
+    width: 85%;
+    max-width: 1200px;
+    margin-inline: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; 
+    gap: 3rem;
+    
+    @media (min-width: 768px) {
+      margin-inline: 15rem;
+    }
+    @media (min-width: 1200px) {
+      margin-inline: 15rem;
+    }
+
+    &_container {
+      justify-content: center;
+      align-items: center; 
+      clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+      height: 200px;
+      width: 200px;
+      @media (min-width: 768px) {
+        height: 280px;
+        width: 280px;
+      }
+
+      &_unique {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        }
+      }
+    
+    &_name{
+      text-align: center;
+      margin-top: 2rem;
+      @include textStyle($black, $montserrat, 2rem, 0, 1.5rem);
+      &-p{
+        margin-bottom: 1.5rem;
+      }
+      &-icon{
+        color: $black;
+      }
+    }
   }
-  .name {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      margin-bottom: 0;
-      visibility: hidden;
-      @include textStyle(#000000, $montserrat, 3rem, bold, 3.5rem);
-      text-transform: uppercase;
+
+  &_button {
+    @include dFlex(0, center, center);
+    @include btn(none, 3rem, $blue);
+    padding: 10px 15px;
+    margin-inline: auto;
+    margin-top: 15rem;
+    margin-bottom: 5rem;
+    @include textStyle($white, $montserrat, 1.5rem, $regular, 1.5);
+    @media (min-width: 768px) {
+      font-size: 2rem;
+      padding: 15px 20px;
+    }
   }
-  
-  .container:hover .img{
-    opacity: 0.3;
+
+  &_a {
+    text-decoration: none;
+    :hover {
+      background-color: $turquoise;
+      cursor: pointer;
+    }
   }
-  
-  .container:hover .name{
-    opacity: 1;
-    visibility: visible;
-  }
-  
-  // .modal_box{
-  //   display: flex;
-  //   background-color: lightgrey;
-  //   align-items: center;
-  //   justify-content: center;
-  //   position: fixed; 
-  //   pointer-events: none;
-  //   top: 0;
-  //   left: 0;
-  //   height: 100vh; 
-  //   width: 100vw;
-  
-  // }
-  
-  // .modal_text{
-  //  background-color: $white;
-  //  width: 60rem;
-  //  padding: 3rem 5rem;
-  //  max-width: 100%;
-  //  border-radius: 10px;
-  //  text-align: center; 
-  // }
-  
-  // .hidden{
-  //   display: none;
-  // }
-  
-  
+}
+
+.container{
+  text-align: center;
+  margin-bottom: 16px;
+  float: left;
+  position: relative;
+}
+
+
+
+// .modal_box{
+//   display: flex;
+//   background-color: lightgrey;
+//   align-items: center;
+//   justify-content: center;
+//   position: fixed; 
+//   pointer-events: none;
+//   top: 0;
+//   left: 0;
+//   height: 100vh; 
+//   width: 100vw;
+
+// }
+
+// .modal_text{
+//  background-color: $white;
+//  width: 60rem;
+//  padding: 3rem 5rem;
+//  max-width: 100%;
+//  border-radius: 10px;
+//  text-align: center; 
+// }
+
+// .hidden{
+//   display: none;
+// }
+
