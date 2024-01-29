@@ -1,0 +1,49 @@
+.sponsors{
+    padding-block: 8rem 2rem ; 
+    background-color: $turquoiseLight;
+    margin-top: 5rem;
+    &_title{
+       text-align: center;
+       @include textStyle($blue, $montserrat, 2rem, bold, 1.5rem);
+       margin-bottom: 5rem;
+       @media (min-width: 768px) {
+        font-size: 3.5rem;
+      }
+    }
+    &_img{
+        @include dFlex(0, center, center);
+        flex-wrap: wrap;
+        margin-inline: 15rem; 
+        gap: 3rem; 
+        &_unique{
+            width: 25rem;
+            height: 20rem;  
+        }
+        &_a{
+            :hover{
+                transform: scale(1.1);
+                filter: grayscale(100%);
+            }
+        }
+        
+    }
+    &_button {
+        @include dFlex(0, center, center);
+        @include btn(none, 3rem, $blue);
+        padding: 10px 10px;
+        margin-inline: auto;
+        margin-block: 5rem;
+        @include textStyle($white, $montserrat, 1.5rem, $regular, 1.5);
+        @media (min-width: 768px) {
+          font-size: 2rem;
+          padding: 15px 20px;
+        }
+      }
+    &_a{
+        text-decoration: none;
+        :hover{
+            background-color: $turquoise;
+            cursor: pointer; 
+        }
+    }
+}

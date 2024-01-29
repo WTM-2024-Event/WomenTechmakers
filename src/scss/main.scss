@@ -1,8 +1,15 @@
-@import 'core/variables';
+@import 'core/mixins';
 @import 'core/reset';
-@import 'components/code';
-@import 'components/links';
-@import 'layout/page';
+@import 'core/variables';
+
 @import 'layout/header';
+@import 'layout/hero';
+@import 'layout/home';
+@import 'layout/agenda';
+@import 'layout/ponentes';
+@import 'layout/organizacion';
+@import 'layout/patrocinadores';
 @import 'layout/footer';
-@import 'pages/index';
+
+@import 'pages/codigo';
+

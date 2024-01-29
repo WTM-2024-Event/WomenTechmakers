@@ -1,8 +1,107 @@
-.page__footer {
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100vw;
-  padding: 1rem;
-  color: $color-secondary;
+.footer {
+  background-image: linear-gradient(to bottom, #4ec7ffc4, #00cfb4be);
+  padding: 20px;
+  width: 100%;
+  height: auto;
+  text-align: center;
+
+  &_section_content {
+    display: flex;
+    flex-direction: column;
+  }
+  &_section_rrss {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &_section_rrss a {
+    color: $white;
+    margin: 5px 15px;
+    transition: color 0.3s, transform 0.3s;
+    @media (min-width: 768px) {
+      margin: 5px 20px;
+    }
+  }
+  &_section_rrss a:hover {
+    color: $blue;
+    transform: rotate(360deg);
+  }
+  &_section_rrss i {
+    font-size: 2rem;
+    @media (min-width: 768px) {
+      font-size: 2.5rem;
+    }
+  }
+
+  /*c2*/
+  &_section_content_c2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @media (min-width: 768px) {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  }
+  &_section_links {
+    margin: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @media (min-width: 768px) {
+      align-items: flex-start;
+      margin-left: 30px;
+    }
+  }
+  &_section_links a {
+    margin: 10px;
+    font-size: 1.4rem;
+    color: $black;
+    font-family: $montserrat;
+    text-decoration: none;
+    @media (min-width: 768px) {
+      font-size: 1.6rem;
+    }
+  }
+
+  &_section_links i {
+    color: $white;
+    font-size: 2rem;
+    margin-left: 1rem;
+    transition: color 0.3s, transform 0.3s;
+  }
+
+  &_section_links i:hover {
+    color: $blue;
+    transform: rotate(360deg);
+  }
+
+  &_section_logo {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    &-img {
+      width: 15rem;
+      filter: drop-shadow(2px 2px 3px $white);
+      -webkit-filter: drop-shadow(2px 2px 3px $white);
+      @media (min-width: 768px) {
+        width: 20rem;
+        margin-right: 30px;
+      }
+    }
+  }
+
+  &_section_copy {
+    display: flex;
+    color: $black;
+    font-family: $montserrat;
+    justify-content: center;
+    margin-top: 20px;
+    font-size: 1.2rem;
+    @media (min-width: 768px) {
+      font-size: 1.4rem;
+    }
+  }
 }
+
