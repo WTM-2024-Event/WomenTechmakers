@@ -2,7 +2,7 @@
     padding-block: 8rem 2rem ; 
     background-color: $turquoiseLight;
     margin-top: 5rem;
-    &_title{
+    &__title{
        text-align: center;
        @include textStyle($blue, $montserrat, 2rem, bold, 1.5rem);
        margin-bottom: 5rem;
@@ -10,22 +10,54 @@
         font-size: 3.5rem;
       }
     }
-    &_img{
-        @include dFlex(0, center, center);
-        flex-wrap: wrap;
-        margin-inline: 15rem; 
-        gap: 3rem; 
-        &_unique{
-            width: 25rem;
-            height: 20rem;  
-        }
-        &_a{
-            :hover{
-                transform: scale(1.1);
-                filter: grayscale(100%);
+    &__img{
+        margin-inline: auto; 
+        @media (min-width: 768px) {
+            margin-inline: 15rem; 
+          }
+        &_level{
+            @include dFlex(row, center, center);
+            flex-wrap: wrap;
+            gap: 3rem; 
+            &_title{
+                @include textStyle($black, $montserrat, 2rem, $regular, 1.5rem);
+                margin-bottom: 5px;
+                text-align: justify;
+            }
+            &_unique{
+                width: 25rem;
+                height: 20rem;  
+            }
+            &_a{
+                :hover{
+                    transform: scale(1.1);
+                    filter: grayscale(100%);
+                }
+            }
+            &_pla{
+                @include dFlex(row, center, center);
+               flex-wrap: wrap;
+                gap: 3rem; 
+            }
+            &_gold{
+                @include dFlex(row, center, center);
+                flex-wrap: wrap;
+                gap: 3rem; 
+            }
+            &_silver{
+                    @include dFlex(row, center, center);
+                    flex-wrap: wrap;
+                    gap: 3rem; 
             }
         }
+       
         
+    }
+    &__line{
+        height: 5px;
+        background-color: $black;
+        width: 70%;
+        align-items: center;
     }
     &_button {
         @include dFlex(0, center, center);

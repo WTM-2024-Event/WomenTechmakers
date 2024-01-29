@@ -16,18 +16,13 @@
   &__img {
     width: 85%;
     max-width: 1200px;
-    margin-inline: 2rem;
     display: flex;
     flex-wrap: wrap;
     justify-content: center; 
+    align-items: center;
     gap: 3rem;
-    
-    @media (min-width: 768px) {
-      margin-inline: 15rem;
-    }
-    @media (min-width: 1200px) {
-      margin-inline: 15rem;
-    }
+    margin-inline: auto;
+   
 
     &_container {
       justify-content: center;
