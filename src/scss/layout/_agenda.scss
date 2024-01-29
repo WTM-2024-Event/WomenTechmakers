@@ -12,12 +12,13 @@
   .titleDiary {
     @include dFlex(column, 0, center);
     @include textStyle(#2480f0, $montserrat, 2rem, bold, 1.5rem);
-    @include margin(0, 5rem);
+    @include margin(0, 3rem);
     text-transform: uppercase;
     padding-top: 2rem;
   
     @media (min-width: 768px) {
       font-size: 3.5rem;
+      @include margin(0, 4rem);
     }
   }
   
@@ -26,7 +27,7 @@
     @include margin(2rem, 0);
     @include padding(2rem, 2rem);
     background-color: $background1;
-    border-radius: 1.3rem;
+    border-radius: 1.2rem;
     gap: 1rem;
     flex-wrap: wrap;
   
@@ -50,18 +51,15 @@
       text-align: center;
       @include dFlex(column, space-between, 0);
       flex: 0 0 auto;
-      background-image: linear-gradient(140deg, $blue 0%, #00cfb4be 100%);
-  
-      //background-image: linear-gradient(to bottom, #00cfb4be, $blue);
-      //border: 0.1rem solid $green;
-      border-radius: 1.3rem;
-      @include textStyle($white, $montserrat, 1rem, semiregular, 1.2);
+      background-color:$blue50;
+      border-radius: 1.2rem;
+      @include textStyle($black, $montserrat, 1rem, 300, 1.2);
       @include padding(1rem, 1rem);
       &--ent {
-        @include textStyle($white, $montserrat, 1.3rem, bold, 1.2);
+        @include textStyle($black, $montserrat, 1.2rem, 400, 1.2);
   
         @media (min-width: 768px) {
-          font-size: 2rem;
+          font-size: 1.5rem;
         }
       }
   
@@ -76,8 +74,8 @@
       flex-direction: column;
       background: $background1;
       @include padding(2.5rem, 0.6rem);
-      @include textStyle($grey, $montserrat, 1.3rem, regular, 1.5);
-      border-radius: 1.3rem;
+      @include textStyle($grey, $montserrat, 1.3rem, regular, 1);
+      border-radius: 1rem;
       text-align: center;
       flex: 1 1 auto;
   
@@ -89,13 +87,17 @@
     &__presentations {
       @include dFlex(0, center, center);
       flex-direction: column;
-      background-image: linear-gradient(10deg, #00cfb4be 0%, $blue 100%);
-      @include padding(2.5rem, 1.6rem);
-      @include textStyle($white, $montserrat, 1.3rem, 500, 1);
+      background-color:$white;
+      @include padding(1.5rem, 1.5rem);
+      @include textStyle($black, $montserrat, 1.2rem, 500, 1);
       cursor: pointer;
-      border-radius: 1.3rem;
+      border-radius: 1rem;
       text-align: center;
       flex: 1 1 auto;
+      :last-child{
+        @include textStyle($black, $montserrat, 1.2rem, 300, 1);
+        margin-top: 0.8rem;
+      }
   
       &:hover {
         box-shadow: 5px 5px 10px $blackTransparent;
