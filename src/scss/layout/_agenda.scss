@@ -11,14 +11,20 @@
 
 .titleDiary {
   @include dFlex(column, 0, center);
-  @include textStyle(#2480f0, $montserrat, 2rem, bold, 1.5rem);
-  @include margin(0, 3rem);
+  @include textStyle($blue, $montserrat, 2rem, bold, 1.5rem);
+  @include padding(0, 2rem);
+  @include margin(2rem, 0);
+  margin-top: 2rem;
+  // border: solid 1px black;
+  // background-color: $blue100;
+  // border-top-left-radius: 5rem;
+  // border-top-right-radius: 5rem;
   text-transform: uppercase;
   padding-top: 2rem;
 
   @media (min-width: 768px) {
-    font-size: 3.5rem;
-    @include margin(0, 4rem);
+    font-size: 3rem;
+    @include padding(0, 3rem);
   }
 }
 
@@ -27,7 +33,9 @@
   @include margin(2rem, 0);
   @include padding(2rem, 2rem);
   background-color: $background1;
-  border-radius: 1.2rem;
+  border-radius: 2rem;
+  // border-bottom-left-radius: 2rem;
+  // border-bottom-right-radius: 2rem;
   gap: 1rem;
   flex-wrap: wrap;
 
@@ -51,7 +59,7 @@
     text-align: center;
     @include dFlex(column, space-between, 0);
     flex: 0 0 auto;
-    background-color: $blue50;
+    background-color: $blue100;
     border-radius: 1.2rem;
     border:0.1rem solid black;
     @include textStyle($black, $montserrat, 1rem, 300, 1.2);
