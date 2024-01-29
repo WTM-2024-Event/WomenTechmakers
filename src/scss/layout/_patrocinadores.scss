@@ -12,9 +12,9 @@
     }
     &__img{
         margin-inline: auto; 
-        @media (min-width: 768px) {
-            margin-inline: 15rem; 
-          }
+        // @media (min-width: 768px) {
+        //     margin-inline: 10rem; 
+        //   }
         &_level{
             @include dFlex(row, center, center);
             flex-wrap: wrap;
