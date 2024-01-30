@@ -19,7 +19,7 @@ toggleButton.onclick = () => {
 const ponentesInfo = {
   'Ponente 1': {
     name: 'Cristina rodríguez',
-    image: './images/cris.png',
+    image: './images/crisFlor.png',
     title: 'Cómo teletrabajar en un networking',
     place: '(Madrid, 1991)',
     bio: 'Breve biografía del Ponente 1.',
