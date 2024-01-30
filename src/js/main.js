@@ -10,8 +10,6 @@ toggleButton.onclick = () => {
   toggleButton.classList.toggle('close');
 };
 
-
-
 // Modales Ponentes
 
 // Objeto que almacena la información de los ponentes
@@ -67,11 +65,11 @@ const ponentesInfo = {
   },
 };
 
-function openModal(ponente) {
-  const modal = document.getElementById('myModal');
-  const modalContent = document.getElementById('modalContent');
+const modal = document.getElementById('myModal');
+const modalContent = document.getElementById('modalContent');
 
-  modal.classList.remove ('hidden');
+function openModal(ponente) {
+  modal.classList.remove('hidden');
 
   const modalShown = localStorage.getItem('modalShown');
   if (!modalShown) {
@@ -95,52 +93,8 @@ function openModal(ponente) {
 }
 
 function closeModal() {
-  const modalContent = document.getElementById('modalContent');
-
-  myModal.classList.add ('hidden');
+  modal.classList.add('hidden');
   modalContent.innerHTML = '';
-  
+
   localStorage.removeItem('modalShown');
 }
-
-
-
-// const speakersSocials = {
-//   'Ponente 3': {
-//     name: 'Alba Ginés',
-//     linkedin: 'https://www.linkedin.com/in/alba-gg/',
-//     twitter: 'https://twitter.com/developerdrm',
-//   }
- 
-// };
-
-// function openModalSocials(speaker) {
-//   const modalContainer = document.getElementById('modalWindow');
-//   const modalText = document.getElementById('modalText');
-
-//   modalContainer.classList.remove ('hidden');
-//   const infoSpeaker = speakersSocials[speaker];
-//   modalText.innerHTML = `
-//       </div> 
-//         <h2 class="speaker__name">${infoSpeaker.name}</h2>
-//       </div>
-//       <div class="speaker__socials">
-//         <a href="${infoSpeaker.linkedin}">
-//           <i class="fa-brands fa-linkedin"></i>
-//         </a>
-//         <a href="${infoSpeaker.twitter}">
-//           <i class="fa-brands fa-x-twitter"></i>
-//         </a>
-//         <button class="modal__close" onclick="closeModalSocials()"">Volver</button>
-//       </div>`;
-//   }
-
-
-// function closeModalSocials() {
-//   const modalText = document.getElementById('modalText');
-//   const modalContainer = document.getElementById('modalWindow');
-
-//   modalContainer.classList.add ('hidden');
-//   modalText.innerHTML = '';
-
-// }
