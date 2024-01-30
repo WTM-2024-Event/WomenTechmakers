@@ -27,7 +27,7 @@ const ponentesInfo = {
   },
   'Ponente 2': {
     name: 'Ainhoa de las Heras',
-    image: './images/ainhoa.jpg',
+    image: './images/ainhoaFlor.png',
     title: 'Cómo teletrabajar en un networking',
     place: '(Barcelona, 1991)',
     bio: 'Breve biografía del Ponente 2.',
@@ -35,7 +35,7 @@ const ponentesInfo = {
   },
   'Ponente 3': {
     name: 'Raquel Ortiz',
-    image: './images/Rachel.jpg',
+    image: './images/rachelFlor.png',
     title: 'Cómo teletrabajar en un networking',
     place: '(Barcelona, 1991)',
     bio: 'Breve biografía del Ponente 3.',
@@ -43,7 +43,7 @@ const ponentesInfo = {
   },
   'Ponente 4': {
     name: 'Alba Ginés',
-    image: './images/istockphoto-1328879352-612x612.jpg',
+    image: './images/defaultFlor.png',
     title: 'Cómo teletrabajar en un networking',
     place: '(Barcelona, 1991)',
     bio: 'Breve biografía del Ponente 4.',
@@ -51,7 +51,7 @@ const ponentesInfo = {
   },
   'Ponente 5': {
     name: 'Aranzazu Barrutia',
-    image: './images/istockphoto-1328879352-612x612.jpg',
+    image: './images/defaultFlor.png',
     title: 'Cómo teletrabajar en un networking',
     place: '(Barcelona, 1991)',
     bio: 'Breve biografía del Ponente 5.',
@@ -59,7 +59,7 @@ const ponentesInfo = {
   },
   'Ponente 6': {
     name: 'Paula Gonzalez',
-    image: './images/istockphoto-1328879352-612x612.jpg',
+    image: './images/defaultFlor.png',
     title: 'Cómo teletrabajar en un networking',
     place: '(Barcelona, 1991)',
     bio: 'Breve biografía del Ponente 6.',
