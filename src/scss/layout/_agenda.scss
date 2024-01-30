@@ -186,9 +186,10 @@
   }
 
   &__text {
-    @include textStyle($black, $montserrat, 1.2rem, regular, 1.5);
+    @include textStyle($black, $montserrat, 1.2rem, regular, 1.6);
     margin-bottom: 2.5rem;
     text-align: left;
+    text-wrap:pretty;
     @media (min-width: 768px) {
       margin-inline: 3rem;
       font-size: 1.4rem;
@@ -215,6 +216,9 @@
   display: none;
 }
 
-.br {
-  margin-top: 5rem;
-}
+br {
+  content: "";
+  display: block;
+  margin-top: 0.8rem;
+ }
+ 

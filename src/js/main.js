@@ -61,7 +61,7 @@ const ponentesInfo = {
     title: 'Cómo teletrabajar en un networking',
     place: '(Barcelona, 1991)',
     bio: 'Breve biografía del Ponente 6.',
-    info: '¿Qué podemos hacer en nuestro día a día para salvar al planeta? El tema de la sostenibilidad también aplica a la informática. <br class="br">El Green Computing es un área de la informática que estudia el uso de los recursos y su impacto ambiental. <br>Entonces, ¿podemos hacer nuestro trabajo más sostenible? ¿Y es el trabajo en remoto siempre más sostenible? <br>Vamos a ver una introducción al Green Computing y que podemos hacer cotidianamente para aportar nuestro granito de arena al medioambiente.',
+    info: '¿Qué podemos hacer en nuestro día a día para salvar al planeta? El tema de la sostenibilidad también aplica a la informática. <br>El Green Computing es un área de la informática que estudia el uso de los recursos y su impacto ambiental. <br>Entonces, ¿podemos hacer nuestro trabajo más sostenible? ¿Y es el trabajo en remoto siempre más sostenible? <br>Vamos a ver una introducción al Green Computing y que podemos hacer cotidianamente para aportar nuestro granito de arena al medioambiente.',
   },
 };
 
