@@ -18,7 +18,6 @@ document.addEventListener("DOMContentLoaded", function() {
     const isScrolled = window.scrollY > 50;
 
     logo.src = isScrolled ? "./images/Logo-negro.png" : "./images/Logo-blanco.png";
-    logo.style.filter = isScrolled ? "none" : "drop-shadow(1px 1px 3px #000000)";
   });
 });
 
