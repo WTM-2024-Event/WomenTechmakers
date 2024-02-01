@@ -10,7 +10,6 @@ toggleButton.onclick = () => {
   toggleButton.classList.toggle('close');
 };
 
-
 // Modales Ponentes
 
 // Objeto que almacena la información de los ponentes
