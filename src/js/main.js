@@ -10,6 +10,19 @@ toggleButton.onclick = () => {
   toggleButton.classList.toggle('close');
 };
 
+// Scroll (cambia el logotipo de color)
+document.addEventListener("DOMContentLoaded", function() {
+  const logo = document.querySelector(".navbar_a-logo");
+
+  window.addEventListener("scroll", function() {
+    const isScrolled = window.scrollY > 50;
+
+    logo.src = isScrolled ? "./images/Logo-negro.png" : "./images/Logo-blanco.png";
+    logo.style.filter = isScrolled ? "none" : "drop-shadow(1px 1px 3px #000000)";
+  });
+});
+
+
 // Modales Ponentes
 
 // Objeto que almacena la información de los ponentes
@@ -98,3 +111,4 @@ function closeModal() {
 
   localStorage.removeItem('modalShown');
 }
+
