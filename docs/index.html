@@ -1,69 +1,678 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Adalab Web Starter Kit</title>
-    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet" />
-    
-    <link rel="icon" href="./images/favicon.png" />
-    <link rel="stylesheet" href="./assets/main-62015576.css">
-  </head>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>WTM Madrid</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet" />
+  
+  <link rel="icon" href="./assets/favicon1-2204d813.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;700;900&family=Montserrat:wght@100;200;300;400;500;600;700&family=Open+Sans:wght@300;400;600;700&family=Roboto:wght@100;300;400;500;700;900&display=swap"
+    rel="stylesheet">
+  <script src="https://kit.fontawesome.com/d65782632e.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="./assets/main-3b1f2e85.css">
+</head>
 
   <body>
-    <div class="page">
-      <header class="page__header">
-  <img src="./images/logo-adalab.png" alt="Adalab">
-  <h1>Bienvenidos a Adalab</h1>
+    
+      <header class="header">
+  <nav class="navbar">
+    <a href="index.html#hero" class="navbar_a">
+      <img class="navbar_a-logo" src="./assets/Logo-blanco-4769e454.png" alt="Logo Women TechMakers">
+    </a>
+    <div class="navbar_items">
+      <div class="navbar_items-menu">
+        <a class="navbar_items-menu-a" href="index.html#home">Home</a>
+        <a class="navbar_items-menu-a" href="index.html#agenda">Agenda</a>
+        <a class="navbar_items-menu-a" href="index.html#ponentes">Ponentes</a>
+        <a class="navbar_items-menu-a" href="index.html#organizacion">Organización</a>
+        <a class="navbar_items-menu-a" href="index.html#patrocinadores">Patrocinadores</a>
+      </div>
+      <div class="navbar_items-extra">
+        <a class="navbar_items-extra-a" href="#">Entradas</a>
+        <a class="navbar_items-extra-a" href="#">Contacto</a>
+      </div>
+    </div>
+    <div class="nav_toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+</div>
 </header>
+    <main>
+      <section class="hero" id="hero">
+    <div class="hero_box">
+        <img class="hero_box-img" src="./assets/wtm-impact-b7b606ff.png" alt=" Imagen Impact the future">
+        <ul class="hero_box_ul">
+            <li class="hero_box_ul-li">
+                <img class="hero_box_ul-li-img" src="data:image/png;base64,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" alt="Icono calendario">
+                <p class="hero_box_ul-li-p">18 de Mayo de 2024</p>
+            </li>
+            <li class="hero_box_ul-li">
+                <img class="hero_box_ul-li-img" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAYAAADimHc4AAAACXBIWXMAAAsTAAALEwEAmpwYAAAOm0lEQVR4nO1de1Bb5529koA48RMBwgiQkK6cdvPHzmzbmSbtbndmk25n2ulu9pHdmc5upruTzcO0deKkTabJzpWQeJqnkQ3iYRo7qUES6IGQAMdxGjvGaQBjXvaCsSGAJSEhCZv3Q9/OFXziSgiQkO4VODozZ6757u/8zvnuU1eSAUEiiCCCCCKIIAIXONmOWAE29R8CoeNdFLO9/AzmYK6uiYB0CDD7vwqEDrtA6ACQqNAxhWKOfyPf/RsOvujhD1GhfYm48dd3gn0JFU09F+6MjzUEmL15faPbBwVCR8HacnUnYHZduDM+1kAxx0P3DhA7UHyMnzF1zD2GOWzhzviN2QEo5hDgY5EdQCEEQruBeAlCMUchitnvEu4DjVTm+cYBFU09h2L2RZ83Ycy+eEw09f1wZ3zscQyz/zN+rffaAXb85Wm4sz32EGDWQ/hLUQFmO07cATyR7Tg+/q1cy8FwZ3zs8G3JdBKK2d9BMfuNzZ4BPJ4FhPY2VGh/m4tNH6U0aErB10+iQvsZ/HREhXYLijny8COGFDMAaAKR/V8EQodGILQbVzeM3YzfJPG3Br4rA9HBWvAxGwfFHFWo0L6w1UbfYmcsCDBHBSqeTA3NpLcLLJwsRUU24EGh7QE/w/aLUPqgmP07fJHtiw1eBPJFtj4+Zv+7HRlggI6KJt/hC23TG+cz6URFtvFNfMfX1ntneYSKJk/iBw1CJlCR1YZmTAJf5GdMfnosw/oXwfT/dtZUHJphLUMzrCub+WzwFVnrBJg1JZA32fiiyZaN+a3XBSLbcbwXT2T9sS8vfBxfj4ot6XzRZNvGGquei9mPIGSBL7Y6IdMyLP/Al1jvEcd4YusCX2LLTjxl3B9QYzlg8EWW13liq4XYjy+enOFLrAUeYxlWjC+22rzqHvHFlveewUDMVjYcyUQSX2zt9srci89l41wnL3h5XPCuQTMsL/LFk/2eddYuLmYm597AF1uckPCewJe4NsgccR1fbBlDM6wv+9VTYvkeX2xp89LjE9Eew0x8n76Yg8kTTxbzxZZl4jqexDrAz5j46aZHvtjS7VEvniz6WwxEbZYNP+J5GRNv4cvNanA9X2I57ZW9i59jO4yEGjyJ2QlJHEezzAKeZMJAXI8zTTLxCTfjgc/LEn6U8CQT5TyJedlTYx7gSyZ+5pdvhuW7vMyJtg2+mRNajtjIcxdigM7LnGgmeCzwJKZXQrlt0iSmV1f7wgxmXcjvCWmZJiekr/U8ifHn3EzzCLGOm2la4GaZi+FlCT9i0jJNJ9IyTXZiXVqmeToty4QJSgaeCMgXA/Q0ifllbqbZ7NVvBu/Hxe7vS5MYf0tcF+qNT8j5msfcJaY3Q2uQZXRCblaDvyxNyzIXcrOMi8T6tCzT/bRs0xlulnHAc9y17qIgZzQlGN+n88fjudlmWVqWcZlYz80yjnOzjPPusWxjEUIiuFmm0wTvh1vNK/DmOcYVyO1qeZmjf8nNMX1O1HiTk23qT8sz/30ofTmS8e9wc0zXCBonN8cEVv9t6kG2uOaHAvjzCTfH1Lc+R2NZyJpzc8ZXIP0SAEDj5hj/i5v9YJSb8wCsc3wiLXv8hL8bgxuoLwbonOzxVzi5a765Ls+V1GzjzxEKwM0df9GdOfvBLDfvfmheFXFyx1YgAwqE3d/HyRlzcnLHnPgyATMfoMKXkzP+O+ibmvvgGhIgwOuvfwu8mv4meCX96UC1nNzx6zBzau7oW4HqfTfNG12B3AtaTu7odahLzRt7IxAtSE9ng/RfTYJf/Rq4lunp7MAyj6Wv5x67ioQCqae+XoHc7VpBycCh1FNfL7h0eV8vJwd4MwRvn2wA75wEbr79VkAfxLDzx1JxX9w/JW90Pi73dvDvoqbkD69A7nZtUt7wD12aU8PO5FPDY6n5I5s+THkDvP/eS+CDd8FG/s7vzwNwv+T84XHcH8/Bzrsf/LcpUvKHlyF3uzY1//4vU/KHnSkFI8C1dOlHzm+nAznvHgbiD8aA5AOwke8bQfZ7sdvnHTm/ltftn1ww4tc7A1siueD+MiSV2p2AXTAiSy4cBi4W3HNCb3bhyAtb6UC+qALki8AWrNhKn4Qf+e653nOuZxgO/uVocuG9ZUgqtTsBu3BIn1x0H7hYOOSE3uyioZNb6YBUYgXSTLApSzMtW/oWDZ1cn+uQE2bA8+xoIp7N7y5DUqndCdjFQ+Xs4iHgYtGg0+1fOLT1GVCVVwmq88CmrMqr3NK3cOiF9bkOOmGG5ILB4M8AdvHgMiSV2p2AXXT3l+ziQSe75C5wLV3ed7e/B8hzDoOPCsfBx0VgAz8qMgJ5wbZf0sV91ubq9k8uGgz+HpBUMrgESaV2J2CXDP5g1W9g+Wjx3VH26f/b8sgnAjSUvgTqpcAH/X4VhPslldwdw/3xHMklA88iwSLp9MASJJXanYBZMnAo6fTAnMuzZGAxuWQgsOeApvIG0CQDburKA3oOSCru5eC+a3OeTZD2BvT07xNHS+8sQVKp3SmOlt6+5vaV3gnsSbi1ig0un5sEl88B17K1KqAn4cTSO+nQO/H0nT8FHN5nU+ntJUgqtTsFS3rnrXXf/sDfC/r8w6fB1QsnwGcfHwtMCGiJ0tvXoTfrzO0TSCiQKO1fgqRSu1MkSHuPsqT909CXJe37R4QCsEr7/8ntWdo/xyruTgxN4zN9S5BUaoNBwpm+8nXv3l4Eu0Lq5wGIrD2aJe3rd/lJ+5ZZ0r7FkPVmne1dhKRSGwySKwZSWGW9NuideLa3GCERrLM9pS6vst4l1tkeZ0jnm1DWswhJpTZYxJf3vEn0j5f1kPKZMKus+zW3T3kvSCjrWQ7pfBNk3YuQVGqDBgboCbJuLSHDTHzFrf9BQgiWrPu1BFn3LMFjJeTzjZfdWoSkUhsKHC66eSRO1tVBzJFQ3lW81T2BWdb54/iyWyfw5aaNZe3R8eW3Sol942VdX5Ey3/iKrkVIKrWhQoL0y6NxFTc7iFniZTd74ipubXh1FC+7+aFX3YceBQDQ4qq6X4yXdfV51FV0fcWqbEskZb5xlZ0LkFRqQ4nDNTePMCs7NcQ8a7waV9n1BrPiVgqzuvMFH+sX4qpuPR97ric1rqrzeFxV5zUfNQ3MkhuHSJsvs6pjAZJKbcgBAI1Z3fkbZnXnJDHXGudjqztHmVUdK8yqzuV1dqysjXvXLzCrOq1x1TfTid+EI2W+zKr2BUgqtWSB+YebycyqDimzuuMhMR+zqn2JWd0BNhAfJ9ZVdzyMq+48HX+hPYmS+cZWf7UASaWWbLAquxOZ59pPxJ5r/yz2XPvMWs6V2HPtwE38Z3zctb79CrO6/TeJ57tYlM439tyXC5BUaqlEXNW1g8yaG88eqbnxn8yaP59l1nypxpeun6vbvp8gvXIgbPM9UnNjAZJK7V4EKfM98ocb85B7RRsukJL58Idt85B7RRsukJL58Pnr85B7RRsukJL50IVr85B7RRsukJL50IWr85B7RRsukJL54MdX5yD3ijZcICXzgT9+Pge5V7Thuo6TkvnAxT/NQe4Vbbiu46Rk3n/x0znIvaINBgc/ujoPuSsy76+9PAe5V7TB4OAfP5+D3BWZn6r7ZA4yYG3t5Q8gqfQNBsFcRkjJ/JTik1nIkDXdxb77az+dg9wVmZ9UXJqFDFnTXey7v+7yHOSuyPyksmUWMmRNd7HvU/JPZiF3ReZ99c2zkCFruot9nwziKCYl874GwyxkyJqS7LsvCG0wRzEp2+qJBsMMZOCB9O9DUun7RDCZ6w2zkFT6bt5UpZ+B/EZoG4LY8UH4booYdeN0jFo3gxPBMHpg2lWdSxuwry48WlXTDCSVvpsiWqMditY0zuBkNDb+JDDtqg5nQKYNDXHRmsaFaE3jYrRGO4+cP7+fEl+dLjZmzTdG0ziPyOUHKPHduqmmJFqjmXFRq7VGaTS/R2pq9vmpXdVpNP4FqqnZh/eP1monorVa4KZGMxKl1b6GyOUMUnzl8pgorfa30RqN2ct3NEqjeYM0X7/QUs+K0qqHohrVM5AMraaH0aja9mwgararZTSqfoL3JWq8yWhUt0VpG54Lqa9W+zxDq+lya7TqOTfX5/tFlFr9vVD6BoQnNBoeQ6f+LEqnnvZgk+YiotVyNg1EqN20uVbLwft492bo1G0MnTqf0aTu9Vr3KEqnqUA0msSgfPX1KVE61Uc+fK8zdOoshk7d7TXXhwydphi5ojoSlO+OAQCN3qT6BUOvGmY0qabd1KssUU2q3yN6/YZfvEes29BPJoum61XHGU0qs0e/JtUYPu4+7d11DSbPOrXZ5SuXx+zM17tfw7h/vqpRur7hv339dsQtfUOGK6ojjCblKUZT/RSjqX7aTV19N6Op3uM79cT1xPEonfJHjKb6dg99U/0jhl5ZiWi18T59DfVJ+HpXnafuJkOvet4vX4Pqb+j6+q98+rbUs7bxJWqm6Tpla4xe/Yw/vuRAr/grul55ha5XThNJMygViFbuuiwRx+FkaHplpbeGrldeR1rU/v2RBH3DX9MNyj/79G2+mBqQr0HZhujr/frf7FEtyh/R9cp2L72dZlCeQlpa9vv0JR1yOYPeonyVblCM0Q2KaQLNtGZ5Bt2gmKUb8KCKWZpBIaQb5GavunFc7++rDDfwy0Oz/Nd0g8Lo2U9upjUrxH75GhSvB+wrl8fQmxXv0JuVEx79mhX9DIP8Z8QxhFLo5Qm0ZkU5rVn+kNaseESgk0DCuKuufNPT3l/o5EdpLYrKgHxbFLKgfZsvptIMilovT6LPMBIWtNY+S2uVf0FrkT9aZd3SOuGY/DpySR7aP4zWrPiBH75teF1IfVuVP6W1yPsJHpASJGzAT+vW2peQ1loF0lo7hFyqdawu6+qRSxf/PeDTfke+dXeRS3VTyKXae0hrnZJU33btU0hL3f8irbV9yKW620hrLYZfIknxiiCCCCKIIIIIIogggggiiCCCCCKIIIIIIoggAiRg/D/w90HOCdOrCwAAAABJRU5ErkJggg==" alt="Icono mapa">
+                <p class="hero_box_ul-li-p">Talent Garden<br>
+                    <span class="span"> C. de Juan de Mariana, 15</span>
+            </li>
+        </ul>
+    </div>
+</section>  
+      <section class="home" id="home">
+  <h2 class="home_title">home</h2>
+  <section class="home_section">
+    <p class="home_section-p">
+      El 18 de Mayo tienes una cita en nuestra quinta edición del evento
+      <strong>Women Techmakers Madrid.</strong>
+      <br />
+      Women Techmakers es una iniciativa liderada por Google, que se está
+      expandiendo a un programa a nivel mundial.
+      <strong>Con motivo del Día Internacional de la Mujer</strong>
+      , se promueven diferentes eventos alrededor del mundo con el objetivo de
+      dar a conocer el trabajo y el conocimiento de las mujeres en el sector
+      técnico.
+      <br />
+      En Madrid
+      <strong>queremos juntar a las mejores ponentes</strong>
+      para que puedan compartir con todos nosotros su conocimiento. Y recordad
+      que
+      <strong>los chicos también están invitados</strong>
+      a asistir al evento.
+      <br />
+      <strong>Call 4 Sponsors</strong>
+      ********no está terminado********
+      <br />
+      <strong>Call 4 Papers</strong>
+      ********no está terminado********
+    </p>
+    <img
+      class="home_section-img"
+      src="./assets/pepinas-19b3296f.jpg"
+      alt="foto pepinas"
+    />
+  </section>
+</section>
 
-      <main class="page__main">
-  <h2>Este es el starter kit de Adalab</h2>
-  <p>Lo usamos para aprender:</p>
-  <ul class="main__list">
-    <li>Sass</li>
-    <li>HTML partials</li>
-    <li>Gulp</li>
-    <li>y muchas cosas más</li>
-  </ul>
-  <p>Si quieres saber cúales son las rutas correctas para:</p>
-  <ul class="main__list">
-    <li>
-      una <code class="code">&lt;img /&gt;</code> mira el fichero
-      <code class="code">./src/html/partials/header.html</code>.
-    </li>
-    <li>
-      y para un <code class="code">background-image</code> mira el fichero
-      <code class="code">./src/html/scss/layout/_page.scss</code>.
-    </li>
-  </ul>
-  <p>
-    Si quieres saber cómo usar un partial HTML dentro de otro partial, busca en la carperta
-    <code class="code">./src/html/index.html</code> y
-    <code class="code">./src/html/partials/main.html</code>, y verás cómo estamos creando estos
-    enlaces:
-  </p>
-  <ul class="main__list">
-    <li>
-      <a class="link__adalab" href="https://adalab.es">Adalab</a>
+      <section class="diarySection">
+  <article class="sectionDiary" id="agenda">
+    <h2 class="titleDiary">Agenda</h2>
 
-    </li>
-    <li>
-      <a class="{=$aClass}" href="./more-info.html">Más info del starter kit</a>
+    <div class="diary">
+      
 
-    </li>
-  </ul>
-</main>
+      <div class="diary__cel">
+        <div class="diary__time">
+          <div>
+            <span class="diary__time--ent">10</span>
+            <span>: 00</span>
+          </div>
+          <div>
+            <span class="diary__time--ent">10</span>
+            <span>: 25</span>
+          </div>
+        </div>
+        <div class="diary__act">
+          <p>Acto de bienvenida</p>
+        </div>
+      </div>
 
-      <footer class="page__footer">
-  <small>
-    &copy; Todos los derechos reservados
-    <a class="link__adalab" href="https://adalab.es">Adalab</a>
+      <div class="diary__cel">
+        <div class="diary__time">
+          <div>
+            <span class="diary__time--ent">10</span>
+            <span>: 25</span>
+          </div>
+          <div>
+            <span class="diary__time--ent">11</span>
+            <span>: 00</span>
+          </div>
+        </div>
+        <div class="diary__presentations" onclick="openModal('Ponente 1')" id="ponente1">
+          <p>"Lorem, ipsum dolor sit amet consectetur adipisicing elit"</p>
+          <p> Cristina Rodríguez</p>
+        </div>
+      </div>
 
-  </small>
-</footer>
+      <div class="diary__cel">
+        <div class="diary__time">
+          <div>
+            <span class="diary__time--ent">11</span>
+            <span>: 10</span>
+          </div>
+          <div>
+            <span class="diary__time--ent">11</span>
+            <span>: 30</span>
+          </div>
+        </div>
+        <div class="diary__presentations" onclick="openModal('Ponente 2')" id="ponente2">
+          <p>"Cómo teletrabajar con un buen café. Vete a un coworking"</p>
+          <p>Ainhoa de las Heras</p>
+
+        </div>
+      </div>
+
+      <div class="diary__cel">
+        <div class="diary__time">
+          <div>
+            <span class="diary__time--ent">13</span>
+            <span>: 10</span>
+          </div>
+          <div>
+            <span class="diary__time--ent">13</span>
+            <span>: 35</span>
+          </div>
+        </div>
+        <div class="diary__presentations" onclick="openModal('Ponente 3')" id="ponente3">
+          <p>"Cómo teletrabajar con un buen café. Vete a un coworking"</p>
+          <p>Raquel Ortiz</p>
+
+        </div>
+
+      </div>
+
+      <div class="diary__cel">
+        <div class="diary__time">
+          <div>
+            <span class="diary__time--ent">11</span>
+            <span>: 30</span>
+          </div>
+          <div>
+            <span class="diary__time--ent">12</span>
+            <span>: 15</span>
+          </div>
+        </div>
+        <div class="diary__act">
+          <p>Pausa</p>
+        </div>
+      </div>
+
+      <div class="diary__cel">
+        <div class="diary__time">
+          <div>
+            <span class="diary__time--ent">12</span>
+            <span>: 25</span>
+          </div>
+          <div>
+            <span class="diary__time--ent">13</span>
+            <span>: 10</span>
+          </div>
+        </div>
+        <div class="diary__presentations" onclick="openModal('Ponente 4')" id="ponente4">
+          <p>"Cómo teletrabajar con un buen café. Vete a un coworking"</p>
+          <p>Alba Ginés</p>
+
+        </div>
+
+      </div>
+      <div class="diary__cel">
+        <div class="diary__time">
+          <div>
+            <span class="diary__time--ent">13</span>
+            <span>: 10</span>
+          </div>
+          <div>
+            <span class="diary__time--ent">13</span>
+            <span>: 35</span>
+          </div>
+        </div>
+        <div class="diary__presentations" onclick="openModal('Ponente 5')" id="ponente5">
+          <p>"Cómo teletrabajar con un buen café. Vete a un coworking"</p>
+          <p>Aranzazu Barrutia</p>
+
+        </div>
+
+      </div>
+
+      <div class="diary__cel">
+        <div class="diary__time">
+          <div>
+            <span class="diary__time--ent">13</span>
+            <span>: 10</span>
+          </div>
+          <div>
+            <span class="diary__time--ent">13</span>
+            <span>: 35</span>
+          </div>
+        </div>
+        <div class="diary__presentations" onclick="openModal('Ponente 6')" id="ponente6">
+          <p>"Cómo teletrabajar con un buen café. Vete a un coworking"</p>
+          <p> Paula Gonzalez</p>
+        </div>
+      </div>
+
+
+      <div class="diary__cel">
+        <div class="diary__time">
+          <div>
+            <span class="diary__time--ent">13</span>
+            <span>: 45</span>
+          </div>
+          <div>
+            <span class="diary__time--ent">15</span>
+            <span>: 00</span>
+          </div>
+        </div>
+        <div class="diary__act">
+          <p>Networking</p>
+        </div>
+      </div>
 
     </div>
+  </article>
+
+  <article class="modal hidden" id="myModal">
+    <div class="modal__container" id="modalContent"><button class="modal__close" onclick="closeModal()">Volver</button>
+    </div>
+  </article>
+
+
+</section>
+      <section class="speakers" id="ponentes">
+  <h2 class="speakers__title" >PONENTES</h2>
+<div class="speakers__img">
+  <div>
+      <div class="speakers__img_container container">
+        <a >
+         <img src="./assets/ainhoaSFlor-8327e730.png" class="speakers__img_container_unique img" alt="Nombre de la ponente"/>
+        </a>
+      </div>
+      <div class="speakers__img_name">
+        <p class="speakers__img_name-p">Nombre ponente</p>
+        <a class="speakers__img_name-icon" href="../codigo.html" target="_blank">
+          <i class="fa-brands fa-x-twitter"></i>
+        </a>
+        <a class="speakers__img_name-icon" href="https://www.linkedin.com/in/alba-gg" target="_blank">
+          <i class="fa-brands fa-linkedin"></i>
+        </a>
+      </div>
+    </div>
+
+    <div>
+      <div class="speakers__img_container container">
+        <img src="./assets/Alba-a25db3c4.png" class="speakers__img_container_unique img" alt="Nombre de la ponente"/>
+      </div>
+      <div class="speakers__img_name">
+        <p class="speakers__img_name-p">Nombre ponente</p>
+        <a class="speakers__img_name-icon" href="https://www.linkedin.com/in/alba-gg" target="_blank">
+          <i class="fa-brands fa-x-twitter"></i>
+        </a>
+        <a class="speakers__img_name-icon" href="https://www.linkedin.com/in/alba-gg" target="_blank">
+          <i class="fa-brands fa-linkedin"></i>
+        </a>
+      </div>
+    </div>
+
+    <div>
+      <div class="speakers__img_container container">
+        <img src="./assets/Aranzazu-ba2a13b0.png" class="speakers__img_container_unique img" alt="Nombre de la ponente"/>
+      </div>
+      <div class="speakers__img_name">
+        <p class="speakers__img_name-p">Nombre ponente</p>
+        <a class="speakers__img_name-icon" href="https://www.linkedin.com/in/alba-gg" target="_blank">
+          <i class="fa-brands fa-x-twitter"></i>
+        </a>
+        <a class="speakers__img_name-icon" href="https://www.linkedin.com/in/alba-gg" target="_blank">
+          <i class="fa-brands fa-linkedin"></i>
+        </a>
+      </div>
+    </div>
+
+    <div>
+      <div class="speakers__img_container container">
+        <img src="./assets/crisSFlor-cce79371.png" class="speakers__img_container_unique img" alt="Nombre de la ponente"/>
+      </div>
+      <div class="speakers__img_name">
+        <p class="speakers__img_name-p">Nombre ponente</p>
+        <a class="speakers__img_name-icon" href="https://www.linkedin.com/in/alba-gg" target="_blank">
+          <i class="fa-brands fa-x-twitter"></i>
+        </a>
+        <a class="speakers__img_name-icon" href="https://www.linkedin.com/in/alba-gg" target="_blank">
+          <i class="fa-brands fa-linkedin"></i>
+        </a>
+      </div>
+    </div>
+
+    <div>
+      <div class="speakers__img_container container">
+        <img src="./assets/rachelSFlor-d0356564.png" class="speakers__img_container_unique img" alt="Nombre de la ponente"/>
+      </div>
+      <div class="speakers__img_name">
+        <p class="speakers__img_name-p">Nombre ponente</p>
+        <a class="speakers__img_name-icon" href="https://www.linkedin.com/in/alba-gg" target="_blank">
+          <i class="fa-brands fa-x-twitter"></i>
+        </a>
+        <a class="speakers__img_name-icon" href="https://www.linkedin.com/in/alba-gg" target="_blank">
+          <i class="fa-brands fa-linkedin"></i>
+        </a>
+      </div>
+    </div>
+
+    <div>
+      <div class="speakers__img_container container">
+        <img src="./assets/mariTereSFlor-71a24d6e.png" class="speakers__img_container_unique img" alt="Nombre de la ponente"/>
+      </div>
+      <div class="speakers__img_name">
+        <p class="speakers__img_name-p">Nombre ponente</p>
+        <a class="speakers__img_name-icon" href="https://www.linkedin.com/in/alba-gg" target="_blank">
+          <i class="fa-brands fa-x-twitter"></i>
+        </a>
+        <a class="speakers__img_name-icon" href="https://www.linkedin.com/in/alba-gg" target="_blank">
+          <i class="fa-brands fa-linkedin"></i>
+        </a>
+      </div>
+    </div>
+</div>
+<!-- <div class="modal_box hidden" id="modalWindow">
+  <div class="modal_text" id="modalText">
+  </div>
+</div> -->
+<a class="speakers_a" href="
+https://docs.google.com/forms/d/e/1FAIpQLScCy3eS1xD6hr7Qk7qXLyJc3xjqn4j56GfH6mf2quHjBqe9zQ/viewform
+" target="_blank" ><button type="button" name="speakers" class="speakers_button">¿Quieres participar en el evento?</button></a>
+</section>
+
+      <section class="organitation" id="organizacion">
+  <h2 class="organitation__title">ORGANIZACIÓN</h2>
+  <div class="organitation__img">
+    <div>
+      <div class="organitation__img_container container">
+        <img
+          src="./assets/mariTereSFlor-71a24d6e.png"
+          class="organitation__img_container_unique img"
+          alt="Maritere Nieto organizadora"
+        />
+      </div>
+      <div class="organitation__img_name">
+        <p class="organitation__img_name-p">Maritere Nieto</p>
+        <a
+          class="organitation__img_name-icon"
+          href="https://twitter.com/_mtnieto/"
+          target="_blank"
+        >
+          <i class="fa-brands fa-x-twitter"></i>
+        </a>
+        <a
+          class="organitation__img_name-icon"
+          href="https://www.linkedin.com/in/mariateresanieto/"
+          target="_blank"
+        >
+          <i class="fa-brands fa-linkedin"></i>
+        </a>
+      </div>
+    </div>
+
+    <div>
+      <div class="organitation__img_container container">
+        <img
+          src="./assets/lauraSFlor-f9b76a98.png"
+          class="organitation__img_container_unique img"
+          alt="Nombre de la organizadora"
+        />
+      </div>
+      <div class="organitation__img_name">
+        <p class="organitation__img_name-p">Laura Lacarra</p>
+        <a
+          class="organitation__img_name-icon"
+          href="lauralacarra"
+          target="_blank"
+        >
+          <i class="fa-brands fa-x-twitter"></i>
+        </a>
+        <a
+          class="organitation__img_name-icon"
+          href="https://www.linkedin.com/in/lauralacarra/
+          "
+          target="_blank"
+        >
+          <i class="fa-brands fa-linkedin"></i>
+        </a>
+      </div>
+    </div>
+
+    <div>
+      <div class="organitation__img_container container">
+        <img
+          src="./assets/ariSFlor-e2846538.png"
+          class="organitation__img_container_unique img"
+          alt="Nombre de la ponente"
+        />
+      </div>
+      <div class="organitation__img_name">
+        <p class="organitation__img_name-p">Ariane Jurado De Bilbao</p>
+        <a
+          class="organitation__img_name-icon"
+          href="https://twitter.com/ari_reinventada"
+          target="_blank"
+        >
+          <i class="fa-brands fa-x-twitter"></i>
+        </a>
+        <a
+          class="organitation__img_name-icon"
+          href="https://www.linkedin.com/in/arianejuradodebilbao/"
+          target="_blank"
+        >
+          <i class="fa-brands fa-linkedin"></i>
+        </a>
+      </div>
+    </div>
+
+    <div>
+      <div class="organitation__img_container container">
+        <img
+          src="./assets/xaviSFlor-e75c4753.png"
+          class="organitation__img_container_unique img"
+          alt="Nombre de la ponente"
+        />
+      </div>
+      <div class="organitation__img_name">
+        <p class="organitation__img_name-p">Xavier Portilla Edo</p>
+        <a
+          class="organitation__img_name-icon"
+          href="https://twitter.com/Xavidop"
+          target="_blank"
+        >
+          <i class="fa-brands fa-x-twitter"></i>
+        </a>
+        <a
+          class="organitation__img_name-icon"
+          href="https://www.linkedin.com/in/xavierportillaedo/"
+          target="_blank"
+        >
+          <i class="fa-brands fa-linkedin"></i>
+        </a>
+      </div>
+    </div>
+
+    <div>
+      <div class="organitation__img_container container">
+        <img
+          src="./assets/rachelSFlor-d0356564.png"
+          class="organitation__img_container_unique img"
+          alt="Nombre de la ponente"
+        />
+      </div>
+      <div class="organitation__img_name">
+        <p class="organitation__img_name-p">Nombre ponente</p>
+        <a
+          class="organitation__img_name-icon"
+          href="https://www.linkedin.com/in/alba-gg"
+          target="_blank"
+        >
+          <i class="fa-brands fa-x-twitter"></i>
+        </a>
+        <a
+          class="organitation__img_name-icon"
+          href="https://www.linkedin.com/in/alba-gg"
+          target="_blank"
+        >
+          <i class="fa-brands fa-linkedin"></i>
+        </a>
+      </div>
+    </div>
+
+    <div>
+      <div class="organitation__img_container container">
+        <img
+          src="./assets/mariTereSFlor-71a24d6e.png"
+          class="organitation__img_container_unique img"
+          alt="Nombre de la ponente"
+        />
+      </div>
+      <div class="organitation__img_name">
+        <p class="organitation__img_name-p">Nombre ponente</p>
+        <a
+          class="organitation__img_name-icon"
+          href="https://www.linkedin.com/in/alba-gg"
+          target="_blank"
+        >
+          <i class="fa-brands fa-x-twitter"></i>
+        </a>
+        <a
+          class="organitation__img_name-icon"
+          href="https://www.linkedin.com/in/alba-gg"
+          target="_blank"
+        >
+          <i class="fa-brands fa-linkedin"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+  <!-- <div class="modal_box hidden" id="modalWindow">
+  <div class="modal_text" id="modalText">
+  </div>
+</div> -->
+</section>
+
+      <section class="sponsors" >
+    <h2 class="sponsors__title" id="patrocinadores">PATROCINADORES</h2>
+  <div class="sponsors__img">
+    
+     <h3 class="sponsors__img_level_title">Platinum sponsors</h3>
+     <hr class="sponsors__line">
+     <div class="sponsors__img_level_pla">
+     <div>
+        <a class="sponsors__img_level_a" href="https://www.capgemini.com/es-es/" target="_blank">
+          <img class="sponsors__img_level_unique" src="./assets/Capgemini-1d42e1c1.png"/>
+        </a>
+     </div>
+     <div>
+        <a class="sponsors__img_level_a" href="https://gdg.community.dev/gdg-madrid/" target="_blank">
+          <img class="sponsors__img_level_unique" src="./assets/logo-gdg-removebg-preview-2066de69.png"/>
+        </a>
+     </div>
+    </div>
+   
+     <h3 class="sponsors__img_level_title">Gold sponsors</h3>
+     <hr class="sponsors__line">
+     <div class="sponsors__img_level_pla">
+     <div>
+        <a class="sponsors__img_level_a" href="https://es.audiense.com/" target="_blank">
+          <img class="sponsors__img_level_unique gold" src="./assets/Audiense-fe9f9829.png"/>
+        </a>
+     </div>
+     <div>
+        <a class="sponsors__img_level_a" href="https://gdg.community.dev/gdg-madrid/" target="_blank">
+          <img class="sponsors__img_level_unique gold" src="./assets/logo-gdg-removebg-preview-2066de69.png"/>
+        </a>
+     </div>
+     <div>
+      <a class="sponsors__img_level_a" href="https://gdg.community.dev/gdg-madrid/" target="_blank">
+        <img class="sponsors__img_level_unique gold" src="./assets/logo-gdg-removebg-preview-2066de69.png"/>
+      </a>
+     </div>
+    </div>
+    
+     <h3 class="sponsors__img_level_title">Silver sponsors</h3>
+     <hr class="sponsors__line">
+     <div class="sponsors__img_level_pla">
+     <div>
+        <a class="sponsors__img_level_a" href="https://gdg.community.dev/gdg-madrid/" target="_blank">
+          <img class="sponsors__img_level_unique silver" src="./assets/logo-gdg-removebg-preview-2066de69.png"/>
+        </a>
+     </div>
+     <div>
+        <a class="sponsors__img_level_a" href="https://gdg.community.dev/gdg-madrid/" target="_blank">
+          <img class="sponsors__img_level_unique silver" src="./assets/logo-gdg-removebg-preview-2066de69.png"/>
+        </a>
+     </div>
+     <div>
+      <a class="sponsors__img_level_a" href="https://gdg.community.dev/gdg-madrid/" target="_blank">
+        <img class="sponsors__img_level_unique silver" src="./assets/logo-gdg-removebg-preview-2066de69.png"/>
+      </a>
+     </div>
+    </div>
+
+    <h3 class="sponsors__img_level_title">Asociaciones Colaboradoras</h3>
+    <hr class="sponsors__line">
+    <div class="sponsors__img_level_pla">
+    <div>
+       <a class="sponsors__img_level_a" href="https://gdg.community.dev/gdg-madrid/" target="_blank">
+         <img class="sponsors__img_level_unique silver" src="./assets/logo-gdg-removebg-preview-2066de69.png"/>
+       </a>
+    </div>
+    <div>
+       <a class="sponsors__img_level_a" href="https://gdg.community.dev/gdg-madrid/" target="_blank">
+         <img class="sponsors__img_level_unique silver" src="./assets/logo-gdg-removebg-preview-2066de69.png"/>
+       </a>
+    </div>
+    <div>
+     <a class="sponsors__img_level_a" href="https://gdg.community.dev/gdg-madrid/" target="_blank">
+       <img class="sponsors__img_level_unique silver" src="./assets/logo-gdg-removebg-preview-2066de69.png"/>
+     </a>
+    </div>
+   </div>
+  </div>
+  <a class="sponsors_a" href="https://forms.gle/MBRnzQDp7StPXxa27" target="_blank" ><button type="button" name="sponsors" class="sponsors_button">¿Quieres apoyarnos?</button></a>
+</section>
+    </main>
+      <footer class="footer">
+  <section class="footer_content">
+    <a href="https://twitter.com/WTMMadrid" target="_blank">
+      <i class="fa-brands fa-x-twitter footer_content-icons"></i>
+    </a>
+    <a href="https://www.linkedin.com/in/wtmmadrid/" target="_blank">
+      <i class="fa-brands fa-linkedin footer_content-icons"></i>
+    </a>
+    <a href="https://www.instagram.com/wtmmadrid/" target="_blank">
+      <i class="fa-brands fa-instagram footer_content-icons"></i>
+    </a>
+    
+  </section>
+
+
+  <section class="sectionFT">
+    <div>
+      <h4 class="fContainer_fTitle">Contacto</h4>
+      <a href="mailto:womentechmakersmadrid@gmail.com">
+        <p class="fContainer_fEmail">womentechmakersmadrid@gmail.com</p>
+      </a>
+      </a>
+    </div>
+
+    <div class="fContainer">
+      <h4 class="fContainer_fTitle">Localización</h4>
+      <p class="fContainer_fText">Talent Garden</p>
+      <p class="fContainer_fText2">C. de Juan de Mariana, 15
+      <p class="fContainer_fText2">Arganzuela, 28045 Madrid</p>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12153.900163777902!2d-3.686344!3d40.398326!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd422706bff431ad%3A0xe1297343074f52c0!2sTalent%20Garden%20Madrid!5e0!3m2!1ses!2ses!4v1706619070524!5m2!1ses!2ses"
+        width="200" height="200" style="border:0;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    <div>
+      <a href="../codigo.html">
+        <h4 class="fContainer_fTitle">Código de conducta</h4>
+      </a>
+    </div>
+  </section>
+  </div>
+  <p class="fContainer_fTextCopy">
+    Made with 💙 by Ainhoa, Alba, Aránzazu, Cris and Rachel &copy; 2024
+  </p>
+</footer>
+   
     <script src="./js/main.js"></script>
   </body>
 </html>
