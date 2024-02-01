@@ -75,6 +75,7 @@
     &-pcenter {
       @include textStyle($black, $montserrat, 1.5rem, 400, 1.8);
       text-align: center;
+      margin-top: 1.5rem;
       @media (min-width: 768px) {
         font-size: 1.6rem;
       }
