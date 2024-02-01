@@ -8,7 +8,7 @@
     text-transform: uppercase;
 
     @media (min-width: 768px) {
-      font-size: 3.5rem;
+      font-size: 3rem;
     }
   }
 
@@ -27,7 +27,7 @@
   }
 
   &__textTitleC {
-    @include textStyle($grey, $montserrat, 1rem, 500, 1.7);
+    @include textStyle($black, $montserrat, 1rem, 400, 1.7);
     text-align: justify;
     padding: 0 4.5rem;
 
