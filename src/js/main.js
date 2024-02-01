@@ -10,17 +10,6 @@ toggleButton.onclick = () => {
   toggleButton.classList.toggle('close');
 };
 
-// Scroll (cambia el logotipo de color)
-document.addEventListener("DOMContentLoaded", function() {
-  const logo = document.querySelector(".navbar_a-logo");
-
-  window.addEventListener("scroll", function() {
-    const isScrolled = window.scrollY > 50;
-
-    logo.src = isScrolled ? "./images/Logo-negro.png" : "./images/Logo-blanco.png";
-  });
-});
-
 
 // Modales Ponentes
 
