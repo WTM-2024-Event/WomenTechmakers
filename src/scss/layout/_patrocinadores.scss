@@ -22,8 +22,8 @@
                 text-align: center;
             }
             &_unique{
-                width: 30rem;
-                height: 25rem;  
+                width: 45rem;
+                height: 35rem;  
             }
             &_a{
                 :hover{
@@ -34,7 +34,7 @@
             &_pla{
                 @include dFlex(row, center, center);
                flex-wrap: wrap;
-               margin-bottom: 5rem;
+               margin-block: 5rem;
 
             }
         }
@@ -46,6 +46,7 @@
         background-color: $black;
         width: 70%;
         margin-inline: auto; 
+        
     }
     &_button {
         @include dFlex(0, center, center);
@@ -69,8 +70,8 @@
 }
 
 .gold{
-    width: 25rem;
-    height: 20rem;  
+    width: 27rem;
+    height: 10rem;  
 }
 
 .silver{
