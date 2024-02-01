@@ -14,7 +14,7 @@
   @include textStyle($blue, $montserrat, 2rem, bold, 1.5rem);
   @include padding(0, 2rem);
   @include margin(2rem, 0);
-  margin-top: 2rem;
+  margin-block: 4rem;
   // border: solid 1px black;
   // background-color: $blue100;
   // border-top-left-radius: 5rem;
