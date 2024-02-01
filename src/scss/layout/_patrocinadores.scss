@@ -22,8 +22,10 @@
                 text-align: center;
             }
             &_unique{
-                width: 45rem;
-                
+                width: 25rem;
+                @media (min-width: 768px) {
+                    width: 45rem;
+                  }
             }
             &_a{
                 :hover{
@@ -70,10 +72,16 @@
 }
 
 .gold{
-    width: 20rem;
-   
+    width: 15rem;
+    @media (min-width: 768px) {
+        width: 20rem;
+      }
 }
 
 .silver{
-    width: 15rem;
+    width: 10rem;
+    @media (min-width: 768px) {
+        width: 15rem;
+      }
+   
 }
