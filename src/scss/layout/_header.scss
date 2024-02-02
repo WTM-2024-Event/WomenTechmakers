@@ -18,7 +18,7 @@
     cursor: pointer;
     &-logo {
       width: 25rem;
-      filter: drop-shadow(1px 1px 3px #000000);
+      // filter: drop-shadow(1px 1px 3px #000000);
       padding-left: 1rem;
     }
   }
@@ -38,7 +38,7 @@
         text-decoration: none;
         @include textStyle($white, $montserrat, 1.5rem, $bold, 2);
         text-transform: uppercase;
-        //filter: drop-shadow(2px 2px 2px #000000);
+        // filter: drop-shadow(2px 2px 2px #000000);
         &:hover {
           color: $blue;
           filter: drop-shadow(2px 2px 2px #ffffff);
@@ -54,7 +54,7 @@
         text-decoration: none;
         @include textStyle($white, $montserrat, 1.5rem, $bold, 2);
         text-transform: uppercase;
-        filter: drop-shadow(2px 2px 2px #000000);
+        // filter: drop-shadow(2px 2px 2px #000000);
         &:hover {
           color: $coral;
           filter: drop-shadow(2px 2px 2px #ffffff);

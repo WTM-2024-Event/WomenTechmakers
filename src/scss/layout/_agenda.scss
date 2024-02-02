@@ -11,10 +11,9 @@
 
 .titleDiary {
   @include dFlex(column, 0, center);
-  @include textStyle($blue, $montserrat, 2rem, bold, 1.5rem);
+  @include textStyle($blue, $montserrat, 2rem, bold, 1.5);
   @include padding(0, 2rem);
-  @include margin(2rem, 0);
-  margin-block: 4rem;
+  margin-top: 4rem;
   // border: solid 1px black;
   // background-color: $blue100;
   // border-top-left-radius: 5rem;
@@ -124,7 +123,7 @@
       box-shadow: 5px 5px 10px $blackTransparent;
     }
     @media (min-width: 768px) {
-      font-size: 1.4rem;
+      font-size: 1.5rem;
     }
   }
 }
