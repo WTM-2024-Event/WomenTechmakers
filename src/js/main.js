@@ -10,6 +10,12 @@ toggleButton.onclick = () => {
   toggleButton.classList.toggle('close');
 };
 
+//enlaces
+function cerrar() {
+  let navbar = document.querySelector('.nav_toggle');
+  navbar.click();
+}
+
 // Modales Ponentes
 
 // Objeto que almacena la información de los ponentes
@@ -99,7 +105,6 @@ function closeModal() {
   localStorage.removeItem('modalShown');
 }
 
-
 const modalBox = document.getElementById('modalBox');
 const modalText = document.getElementById('modalText');
 
@@ -135,16 +140,16 @@ function speakerOpen(speaker) {
 
   // const modalOp = localStorage.getItem('modalOp');
   // if (!modalOp) {
-    const infoSpeaker = speakersInfo[speaker];
+  const infoSpeaker = speakersInfo[speaker];
 
-    modalText.innerHTML = `
+  modalText.innerHTML = `
       <div class="modalBoxes__text_info" >
         <h2 class="modalBoxes__text_info_title">${infoSpeaker.name}</h2>
         <p class="modalBoxes__text_info_bio">${infoSpeaker.bio}</p>
         <button class="modal__closed" onclick="speakerClosed()">Volver</button>
         </div>`;
 
-    // localStorage.setItem('modalOp', 'true');
+  // localStorage.setItem('modalOp', 'true');
   // }
 }
 
